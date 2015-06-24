@@ -1,0 +1,244 @@
+@font-face {
+	font-family: Jangkoo;
+	src: url("fonts/proximanova-regular-webfont.woff");
+}
+.faqheader {
+  font-family: Jangkoo;
+  font-style: normal;
+  font-size: 20px;
+  margin: 20px 0px!important;
+  font-weight: bold;
+  color: #00a0df;
+}
+.faqtext {
+  font-size: 18px;
+  line-height: 28px;
+}
+.menu-ppp{
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.glyphicon-map-marker{
+	font-size: 1.9em;
+	}
+
+.arrow-mobile{
+	display:none;
+}
+.clinic-info-header{
+  background: #b9bcbf;
+  padding:20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 20px;
+  font-family: Jangkoo;
+  letter-spacing: 1.2px!important;
+  line-height: 48px;
+  margin-bottom:30px;
+}
+body {
+  font-family: Jangkoo;
+  margin: 0;
+  color:#434244;
+  padding: 0;
+  background: white;
+}
+
+.nav ul {
+  color:#999899;
+  list-style: none;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  color:#999899;
+  font-family: Jangkoo;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #999899;
+  margin-right: 10px;
+  display: block;
+  border-bottom: 1px solid #00A0DF;
+  transition: background-color;
+}
+
+.nav a:hover {
+  background-color: white;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #999899;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: 15px;
+}
+.homepageheader {
+  letter-spacing: 3.5px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 32px;
+  font-family: Jangkoo;
+  font-weight:bold;
+  color:#434244;
+  margin:30px;
+}
+.footer-ppp{
+background-color:#00A0DF;
+padding:50px 0px 10px 0px ;
+}
+.scrollToTop{
+	width:48px; 
+	height:35px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: whiteSmoke;
+	text-decoration: none;
+	position:fixed;
+	bottom:5px;
+	right:40px;
+	display:none;
+	content: '\f106';
+	background-color:#333333;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+.ppp-blur-bg{
+	background-color:#e0edf4;
+}
+.homepage3treatments-title {
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  font-family: Jangkoo;
+  margin-top: 45px!important;
+}
+.homepage3treatments-subtitle {
+  font-size: 18px!important;
+  text-align: center;
+  line-height: 23px;
+  font-family: Jangkoo;
+}
+hr.blue.thick {
+  width: 33px;
+  border: 3px solid #00a0df;
+  margin-bottom: 20px;
+}
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 758px) {
+  .nav li {
+   /* width: 130px;*/
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: 0px;
+	padding-left:20px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+  color:#999899;
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+	color:#999899;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+	color:#999899;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+  border-top: solid 5px #00A0DF;
+  color:#999899;
+    display: block;
+	z-index:999999;
+  }
+  .nav li ul li {
+    border-bottom: solid 1px #999899;
+	}
+  .nav li ul li {
+    display: block;
+	color:#999899;
+	z-index:999999;
+	font-size:0.7em;
+  }
+  .nav li ul li:hover {
+  background-color:#00A0DF;
+  }
+   .nav li ul li a:hover {
+  background-color:#00A0DF;
+  }
+}
+@media screen and (max-width: 758px) {
+  .nav li {
+   /* width: 130px;*/
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: block;
+    margin-right: 0px;
+	padding-left:20px;
+  }
+  .nav ul li {
+	  color:#999899;
+	  list-style: none;
+	  background-color: #FFFFFF;
+	  text-align: left;
+	  padding-left: 30px;
+	  margin: 0;
+	  border: solid 1px #00A0DF;
+	}
+	.arrow-mobile{
+		display:inline;
+		float:right;
+		margin: auto;
+		vertical-align:center;
+	}
+	.nav li ul {
+		position: absolute;
+		color:#999899;
+		display: none;
+		width: inherit;
+	  }
+	  .nav li:hover ul {
+		  border-top: solid 5px #00A0DF;
+		  color:#999899;
+			display: block;
+			z-index:999999;
+		  }
+}

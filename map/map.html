@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+  <script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map-canvas');
+	var myLatlng = new google.maps.LatLng(1.350772,103.848183);
+    var mapOptions = {
+      center: myLatlng,
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+	 var flightPlanCoordinates = [
+    new google.maps.LatLng(1.353561, 103.848500),
+    new google.maps.LatLng(1.352491, 103.847856),
+    new google.maps.LatLng(1.351949, 103.848092),
+    new google.maps.LatLng(1.350772,103.848183)
+  ];
+    var image = {
+    url: 'http://localhost/images/ppp.png',
+    // This marker is 20 pixels wide by 32 pixels tall.
+    size: new google.maps.Size(20, 32),
+    // The origin for this image is 0,0.
+    origin: new google.maps.Point(0,0),
+    // The anchor for this image is the base of the flagpole at 0,32.
+    anchor: new google.maps.Point(0, 32)
+  };
+    var shape = {
+      coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+      type: 'poly'
+  };
+  var flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: '#0DA0DF',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+
+  flightPath.setMap(map);
+   var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'PPP',
+	  //icon: image,
+	  shape:shape,
+	  zIndex:1
+  });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</html>
