@@ -2,11 +2,11 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php include_once("../load.php");?>
+<?php include_once(dirname(dirname(__FILE__))."/load.php");?>
   </head>
 
 <body>
-<?php include_once("../menu.php");?>
+<?php include_once(dirname(dirname(__FILE__))."/menu.php");?>
 <div class="fluid-container">
 	<div class="row text-center ">
 		<img width="100%" src="<?php echo ABSPATH;?>img/ppp-faq.jpg" />
@@ -140,7 +140,7 @@
 	</div>
 </div>
 <?php 
-	include_once("../footer.php");
+	include_once(dirname(dirname(__FILE__))."/footer.php");
 ?>
 </body>
 </html>

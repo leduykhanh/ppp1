@@ -47,7 +47,18 @@
     <!-- Slides Container -->
     <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1300px; height: 500px; ">
         <div><img u="image" src="img/slider/about-the-company-_header_michelle.jpg" /></div>
-        <div><img u="image" src="img/slider/JPOPENING-2.jpg" /></div>
+        <div><img u="image" src="img/slider/JPOPENING-2.jpg" />
+		        <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 50%;
+                    width: 600px; height: 50px;">
+                    <div style="position: absolute; top: 0px; left: 0px; width: 600px; height: 50px;
+                        background-color: White; opacity: 0.5; filter: alpha(opacity=50);">
+                    </div>
+                    <div style="position: absolute; top: 0px; left: 0px; width: 600px; height: 50px;
+                        color: Black; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
+                        Simple Caption Definition: &lt;div u="caption" t="MCLIP|B" ...&gt;&lt;div/&gt;
+                    </div>
+                </div>
+				</div>
 		<div><img u="image" src="img/slider/JPOPENING-V4-04.png" /></div>
     </div>
 	<span u="arrowleft" class="jssora03l" style="top: 223px; left: 8px;">

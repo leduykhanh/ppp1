@@ -2,7 +2,24 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php include_once("load.php");?>
+<?php 
+	include_once("load.php");
+	/*require 'vendor/autoload.php';
+	$app = new \Slim\Slim();
+	$app->config(array(
+    'debug' => true,
+    'templates.path' => dirname(__FILE__).'/pages'
+		));
+	$app->get('/faq', function () use ($app) {
+		$app->render('/pages/faq.php'); // <-- SUCCESS
+		});
+	$app->get('/', function () use ($app) {
+		$app->render('faq.php'); // <-- SUCCESS
+		});
+	$app->get('/users','getUsers');
+	$app->run();
+	function getUsers(){echo 1111;}*/
+?>
   </head>
 <!-- http://css-snippets.com/drop-down-navigation --> 
 <body>
